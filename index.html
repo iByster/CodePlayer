@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Player</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"> 
+</head>
+<body>
+    <div id="top-bar">
+        <div class="float-left" id="logo">
+            CodePlayer
+        </div>
+        <div id="file" class="float-left a-bit-down pointer" >
+            <p>File</p>
+        </div>
+        
+        <div id="tool-sheets" >
+            <ul>
+                <li id="html-btn" class="float-left a-bit-down remove-margin-left no-border-right curved-border-left editor-btn btn-non-active"><strong>HTML</strong></li>
+                <li id="css-btn" class="float-left a-bit-down no-border-right editor-btn btn-non-active">CSS</li>
+                <li id="javascript-btn" class="float-left a-bit-down no-border-right editor-btn btn-non-active" >JavaScript</li>
+                <li id="output-btn" class="float-left a-bit-down curved-border-right editor-btn btn-non-active" >Output</li>
+            </ul>
+        </div>
+    
+        <div class="float-right a-bit-down pointer" id="help">
+            <p>Help</p>
+        </div>
+    </div>
+
+    <div class="float-clear"></div>
+    <div id="coding">
+        <p>CodePlayer</p>
+    </div>
+
+    <div id="editor">
+        
+        <div id="html" class="work-sheet float-left">
+
+            <div class="header" contenteditable="false">
+
+                <p>HTML</p>
+
+            </div>
+
+            <textarea id="html-papper" class="paper"></textarea>
+
+        </div>
+
+        <div id="css" class="work-sheet float-left">
+
+            <div id="css-border-left" class="editor-border float-left"></div>
+
+            <div class="header left-a-bit" contenteditable="false">
+
+                <p>CSS</p>
+
+            </div> 
+
+            <textarea id="css-papper" class="paper"></textarea>
+
+        </div>
+
+        <div id="javascript" class="work-sheet float-left"  >
+
+        <div id="javascript-border-left" class="editor-border float-left"></div>
+
+            <div class="header left-a-bit" contenteditable="false">
+
+                <p>JavaScript</p>
+
+            </div>
+
+            <textarea id="javascript-papper" class="paper"></textarea>
+
+        </div>
+
+        <div id="output" class="work-sheet float-left " >
+            <div id="output-border-left" class="editor-border float-left"></div>
+
+        
+            <div class="header left-a-bit">
+
+                <p>Output</p>
+
+            </div>
+
+            <iframe src="" frameborder="0"  class="paper left-a-bit" id="output-papper"></iframe>
+        </div>
+    
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
